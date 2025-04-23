@@ -1,13 +1,11 @@
 import React from "react";
 import { Link } from "react-router";
-import Header from "./Header";
-import { Outlet, Link } from 'react-router';
 
 const SubjectCard = (props) => {
     const {subData} = props;
     return(
         <>
-        <Link to={"/item"}>
+        <Link to={"/studyMaterial"}>
         <div className="shadow-lg hover:shadow-2xl w-72 m-10">
             <div className={`${subData.bgColor} w-full h-48 rounded-t-2xl text-white text-4xl px-6 py-10`}>
               {subData.title} 
